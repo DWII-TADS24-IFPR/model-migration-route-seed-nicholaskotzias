@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('declaracoes', function (Blueprint $table) {
             $table->id();
             $table->string('hash');
-            $table->datetimes('data');
+            $table->datetime('data');
             $table->softDeletes();
             $table->timestamps();
         });
