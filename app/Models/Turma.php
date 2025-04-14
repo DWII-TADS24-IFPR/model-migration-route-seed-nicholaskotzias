@@ -8,4 +8,8 @@ class Turma extends Model
 {
     protected $table = 'turmas';
     protected $fillable = ['ano'];
+
+    public function alunos(){
+        return $this->hasMany(Aluno::class);
+    }
 }
