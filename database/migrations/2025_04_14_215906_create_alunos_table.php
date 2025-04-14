@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('nome');
             $table->string('cpf');
             $table->string('email');
-            $table->string('email');
+            $table->string('senha');
             $table->softDeletes();
             $table->timestamps();
         });
