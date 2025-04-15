@@ -16,4 +16,8 @@ class Categoria extends Model
     public function comprovantes(){
         return $this->hasMany(Comprovante::class);
     }
+
+    public function documentos(){
+        return $this->hasMany(Documento::class);
+    }
 }
