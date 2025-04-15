@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nome');
             $table->float('maximo_horas');
+            $table->foreignId('curso_id')->constrained()->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });
