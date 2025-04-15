@@ -20,4 +20,8 @@ class Curso extends Model
     public function categorias(){
         return $this->hasMany(Categoria::class);
     }
+
+    public function turmas(){
+        return $this->hasMany(Turma::class);
+    }
 }

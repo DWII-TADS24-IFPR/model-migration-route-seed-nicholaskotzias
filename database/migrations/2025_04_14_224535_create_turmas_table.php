@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('turmas', function (Blueprint $table) {
             $table->id();
             $table->integer('ano');
+            $table->foreignId('curso_id')->constrained()->onDelete('cascade');
             $table->softDeletes();
             $table->timestamps();
         });
