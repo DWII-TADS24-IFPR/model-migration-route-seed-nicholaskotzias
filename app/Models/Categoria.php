@@ -12,4 +12,8 @@ class Categoria extends Model
     public function curso(){
         return $this->belongsTo(Curso::class);
     }
+
+    public function comprovantes(){
+        return $this->hasMany(Comprovante::class);
+    }
 }

@@ -16,4 +16,8 @@ class Aluno extends Model
     public function turma(){
         return $this->belongsTo(Turma::class);
     }
+
+    public function comprovantes(){
+        return $this->hasMany(Comprovante::class);
+    }
 }
