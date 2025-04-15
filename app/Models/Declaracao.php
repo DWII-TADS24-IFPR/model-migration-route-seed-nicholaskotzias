@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Declaracao extends Model
 {
-    protected $table = 'declaracaos';
+    protected $table = 'declaracoes';
     protected $fillable = ['hash', 'data'];
 }
